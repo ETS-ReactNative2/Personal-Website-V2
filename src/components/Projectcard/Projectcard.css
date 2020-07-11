@@ -1,0 +1,24 @@
+.Projectcard {
+    width: 33%;
+    display: inline-grid;
+}
+.projectContainer {
+    border: 1px solid #DDD;
+    /* box-shadow: 1px 1px 1px 0px #424242; */
+    border-radius: 5px;
+    width: auto;
+    padding: 3% 3% 10% 3%;
+    text-decoration: none;
+    transition: 0.15s ease-in-out;
+    margin: 0% 5% 5% 0%;
+}
+
+.projectContainer:hover {
+    box-shadow: 2px 2px 2px 0px #D84315;
+    transition: 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+.date {
+    font-style: italic;
+}

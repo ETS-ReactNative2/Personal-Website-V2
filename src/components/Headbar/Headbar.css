@@ -1,0 +1,9 @@
+#HeadBar {
+    height: 10px;
+    width:80%;
+    position: fixed;
+    right: 0;
+    z-index: 5;
+    top: 0;
+    background: #D84315;
+}
