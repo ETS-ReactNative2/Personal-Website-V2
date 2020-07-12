@@ -1,17 +1,45 @@
 import React,{Component} from 'react';
 import './Wine.css';
 import {withRouter} from 'react-router-dom';
+import {getWinePosts} from '../components/DocsScraper';
+
 
 class Wine extends Component
 {
+    constructor(props)
+    {
+        super(props);
+        this.state={loading: true,postObjectList: []}
+    }
+
+    componentDidMount()
+    {
+        if(this.state.loading)
+        {
+            getWinePosts().then((data) => this.setState({loading: false,postObjectList: data}))
+        }
+    }
+
     render()
     {
         return (
             <div className="Page">
                 <div className="Wine">
                     <h1>Wine </h1>
-                    <div id="postContainer">
-                    </div>
+                    {
+                        this.state.loading?
+                            <p>Loading</p>:
+                            this.state.postObjectList.map((obj,_) =>
+                            {
+                                return (
+                                    <div id="postContainer">
+                                        <h2>{obj.title}</h2>
+                                        <p>{obj.body}</p>
+                                    </div>
+                                )
+                            }
+                            )
+                    }
                 </div>
             </div>
         );
