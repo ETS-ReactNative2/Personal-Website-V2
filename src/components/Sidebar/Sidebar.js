@@ -12,9 +12,9 @@ class Sidebar extends Component
                     <ul id="NavLinksList">
                         <li><NavLink exact to="/" className="linkButton" activeClassName="activeLink">Home</NavLink></li>
                         <li><NavLink to="/projects" className="linkButton" activeClassName="activeLink">Projects & Publications</NavLink></li>
-                        <li><NavLink to="/travel" className="linkButton" activeClassName="activeLink">Travel</NavLink></li>
+                        {/* <li><NavLink to="/travel" className="linkButton" activeClassName="activeLink">Travel</NavLink></li> */}
                         <li><NavLink to="/wine" className="linkButton" activeClassName="activeLink">Wine</NavLink></li>
-                        <li><NavLink to="/books" className="linkButton" activeClassName="activeLink">Books</NavLink></li>
+                        {/* <li><NavLink to="/books" className="linkButton" activeClassName="activeLink">Books</NavLink></li> */}
                     </ul>
                 </div>
             </div>

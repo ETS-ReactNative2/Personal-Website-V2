@@ -13,9 +13,10 @@ class About extends Component
         <div id="About">
           <div id="text">
             <h1>Arjun Bhalla</h1>
-            <p>Hi! I'm Arjun, a Spring 2020 Computer Science graduate from Cornell University.
-            In Fall 2020, I'll be attending Cornell Tech in NYC to get my M.Eng in Computer Science.
-            My primary interests are in Machine Learning and Distributed Systems.
+            <p>Hi! I'm Arjun, a Spring 2020 Computer Science graduate from <span>Cornell University</span>.
+            In Fall 2020, I'll be attending <span>Cornell Tech</span> in NYC to get my <span>Masters in Computer Science</span>.
+            <br /><br />
+            My primary interests are in Machine Learning and Distributed Systems, specifically looking at how Cloud Architectures can be leveraged to provide efficient ML services for IoT devices, often in places with little connectivity.
             Feel free to explore the rest of my website to learn about my projects and various interests!
             </p>
             <br />

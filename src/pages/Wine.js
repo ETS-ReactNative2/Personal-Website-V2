@@ -25,16 +25,26 @@ class Wine extends Component
         return (
             <div className="Page">
                 <div className="Wine">
-                    <h1>Wine </h1>
+                    <h1>Wine</h1>
                     {
                         this.state.loading?
-                            <p>Loading</p>:
+                            <p>Fetching...</p>:
                             this.state.postObjectList.map((obj,_) =>
                             {
                                 return (
                                     <div id="postContainer">
                                         <h2>{obj.title}</h2>
-                                        <p>{obj.body}</p>
+                                        {
+                                            obj.body.map((para,_) =>
+                                            {
+                                                return (
+                                                    <p>{para}<br />
+                                                    </p>
+                                                )
+                                            }
+                                            )
+                                        }
+                                        <br />
                                     </div>
                                 )
                             }

@@ -25,11 +25,11 @@ function processRawText(txt)
 
         if(firstSix==="title:")
         {
-            retVal.push({"title": section.substring(7),"body": ""})
+            retVal.push({"title": section.substring(7),"body": []})
         }
         else
         {
-            retVal[retVal.length-1].body=retVal[retVal.length-1].body+section
+            retVal[retVal.length-1].body.push(section)
         }
     }
 

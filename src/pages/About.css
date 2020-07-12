@@ -10,9 +10,13 @@
 
 #About {
   width: 100%;
-  /* margin-top: 5%; */
+  margin-top: 5%;
   text-align: justify;
   display: flex;
+}
+
+span {
+  font-weight: 100000;
 }
 
 #media {

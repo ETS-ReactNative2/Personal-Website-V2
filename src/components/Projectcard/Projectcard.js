@@ -8,7 +8,6 @@ class Projectcard extends Component
         super(props);
     }
 
-
     goToLink(link)
     {
         window.open(link,"_blank");
