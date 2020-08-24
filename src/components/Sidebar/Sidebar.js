@@ -12,9 +12,6 @@ class Sidebar extends Component
                     <ul id="NavLinksList">
                         <li><NavLink exact to="/" className="linkButton" activeClassName="activeLink">Home</NavLink></li>
                         <li><NavLink to="/projects" className="linkButton" activeClassName="activeLink">Projects & Publications</NavLink></li>
-                        <li><NavLink to="/travel" className="linkButton" activeClassName="activeLink">Travel</NavLink></li>
-                        <li><NavLink to="/wine" className="linkButton" activeClassName="activeLink">Wine</NavLink></li>
-                        <li><NavLink to="/music" className="linkButton" activeClassName="activeLink">Music</NavLink></li>
                     </ul>
                 </div>
             </div>

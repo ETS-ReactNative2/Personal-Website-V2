@@ -1,24 +1,42 @@
 .Projectcard {
-    width: 33%;
-    display: inline-grid;
+    width: 22.5%;
+    max-height: 15%;
 }
+
+@media all and (max-width: 800px) {
+    .Projectcard {
+        width: 100%;
+        padding: 3%;
+    }
+    .projectContainer .description, .date, .projectContainer h3 {
+        color: #fefefe;
+    }
+}
+
 .projectContainer {
-    border: 1px solid #DDD;
-    /* box-shadow: 1px 1px 1px 0px #424242; */
-    border-radius: 5px;
+    /* border: 1px solid #DDD; */
+    box-shadow: 1px 1px 1px 1px #DDD;
+    border-radius: 10px;
     width: auto;
-    padding: 3% 3% 10% 3%;
+    padding: 2% 2% 2% 3%;
     text-decoration: none;
-    transition: 0.15s ease-in-out;
-    margin: 0% 5% 5% 0%;
+    transition: 0.1s ease-out;
+    /* margin: 0% 7% 7% 0%; */
 }
 
 .projectContainer:hover {
-    box-shadow: 2px 2px 2px 0px #D84315;
-    transition: 0.15s ease-in-out;
+    /* border: 1px solid #FF5722; */
+    box-shadow: 1px 1px 1px 1px #FF5722;
+    transition: 0.1s ease-in;
     cursor: pointer;
 }
 
 .date {
     font-style: italic;
+    opacity: 0.8;
+}
+
+.projectContainer .description {
+    text-align: left;
+    font-size: 0.9em;
 }

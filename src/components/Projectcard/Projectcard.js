@@ -18,9 +18,9 @@ class Projectcard extends Component
         return (
             <div className="Projectcard" onClick={() => this.goToLink(this.props.link)}>
                 <div className="projectContainer">
-                    <h2>{this.props.title}</h2>
+                    <h3>{this.props.title}</h3>
                     <p className="date">{this.props.date}</p>
-                    <p>{this.props.description}</p>
+                    <p className='description'>{this.props.description}</p>
                 </div>
             </div>
         );

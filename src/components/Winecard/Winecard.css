@@ -1,0 +1,39 @@
+.Winecard {
+    width: 50vw;
+    height: auto;
+    position: relative;
+    margin: auto;
+}
+.wineCardContainer {
+    /* border: 1px solid #DDD; */
+    /* box-shadow: 2px 2px 2px 0px #fefefe; */
+    border-radius: 10px;
+    width: auto;
+    padding: 2% 2% 5% 3%;
+    text-decoration: none;
+    text-align: left;
+    transition: 0.1s ease-out;
+    margin: 0% 7% 2% 0%;
+    display: inline-block;
+}
+
+.winePhotoContainer {
+    width: 30%;
+    float:left;
+}
+
+.winePhoto {
+    width: 50px;
+    max-height: 200px;
+}
+
+.region {
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.wineDescriptionContainer {
+    width: 70%;
+    float: right;
+}
+

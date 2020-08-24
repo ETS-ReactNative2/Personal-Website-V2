@@ -14,7 +14,7 @@ ReactDOM.render(
     <Helmet><title>Arjun Bhalla</title></Helmet>
     <div>
       <Headbar />
-      <Sidebar />
+      {/* <Sidebar /> */}
       <Switch>
         <Route exact path="/" component={About} />
         <Route path="/projects" component={Projects} />
