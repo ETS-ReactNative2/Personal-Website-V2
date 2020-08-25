@@ -11,6 +11,7 @@ body {
   margin: 0;
   padding: 0;
   background: #fefefe;
+  text-align:left;
   color: #2f2f2f;
   font-family: 'Roboto', sans-serif;
 }
@@ -65,4 +66,9 @@ html {
   padding: 0;
   line-height: 1.4;
   scroll-behavior: smooth;
+}
+
+@media all and (max-width: 800px) {
+  body {
+  }
 }

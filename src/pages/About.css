@@ -362,6 +362,7 @@ strong {
 
   #text {
     width: 100%;
+    text-align: left;
   }
 
   #text h1 {
@@ -371,6 +372,7 @@ strong {
   #ProjectsContainer {
     background: #2f2f2f;
     padding-top: 2%;
+    padding-bottom: 25%;
   }
 
   #ProjectsContainer h2 {
@@ -381,7 +383,7 @@ strong {
     height: 100%;
     color: #fefefe;
     background: #2f2f2f;
-    padding-bottom: 15%;
+    padding-bottom: 25%;
   }
   #ProjectsCarousel {
     padding-top: 3%;
