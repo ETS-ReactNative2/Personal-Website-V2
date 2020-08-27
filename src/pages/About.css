@@ -329,12 +329,11 @@ strong {
 @media all and (max-width: 800px) {
 
   #IntroSection {
-    padding-bottom: 33%;
+    height: auto;
     background: #fefefe;
   }
 
   #About {
-    /* display: block; */
     display: flex;
     flex-direction: column-reverse;
   }
@@ -381,7 +380,7 @@ strong {
     width: 100%;
     color: #fefefe;
     background: #2f2f2f;
-    padding-bottom: 20%;
+    padding-bottom: 10%;
   }
 
   #ProjectsCarousel {
@@ -397,7 +396,15 @@ strong {
 
   .inTextLink {
     color: #2f2f2f;
-    opacity: 0.85;
+    font-weight: 100;
+    /* opacity: 0.9; */
     text-decoration: none;
+  }
+
+  .inTextLink:hover {
+    color: #2f2f2f;
+    font-weight: 100;
+    text-decoration: none;
+    cursor: default;
   }
 }

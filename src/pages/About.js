@@ -37,10 +37,9 @@ class About extends Component {
           <div id='About'>
             <div id='text'>
               <h1>Arjun Bhalla</h1>
-              <p className='accentText'>Hello! I'm Arjun, a Cornell Computer Science graduate. I am currently interning as a Software Engineer at a medical tech startup called <a href='https://www.enroute.digital' target='blank' className='inTextExternalLink'> enroute </a>.
-              In Fall 2020, I'll be attending Cornell Tech in NYC to pursue my Masters in Computer Science.
+              <p className='accentText'>Hello! I'm Arjun, a Cornell Computer Science graduate. I am currently interning part-time as a Software Engineer at a medical tech startup called <a href='https://www.enroute.digital' target='blank' className='inTextExternalLink'> enroute </a>, and am full-time attending Cornell Tech to pursue my Masters in Computer Science.
               <br /><br />
-              My primary interests are in Machine Learning and Distributed Systems, specifically looking at how Cloud Architectures can be leveraged to provide efficient ML services for IoT devices. In the past, I've done some work on NLP and Recommendation Systems, and have done research with Professor Thorsten Joachims on Counterfactual Machine Learning.
+              My primary interests are in Machine Learning and Distributed Systems, and one of many problems that currently interest me is looking at how Cloud Architectures can be leveraged to provide efficient ML services for IoT devices. In the past, I've done some class and independent project work on NLP and Recommendation Systems, Game playing AI, and have done research with Professor Thorsten Joachims on Counterfactual Machine Learning.
               <br /> <br />
               Please explore the rest of my website to learn about my projects and various interests! Outside of Computer Science, I have a wide array of interests, from golf to travelling and experiencing new cultures. I also really enjoy <a href='#interests' className='inTextLink' onClick={() => this.changeTabIndex(0)}>reading</a>, exploring <a href='#interests' className='inTextLink' onClick={() => this.changeTabIndex(1)}>wine and cooking</a>, listening to, and composing <a href='#interests' className='inTextLink' onClick={() => this.changeTabIndex(2)}>music</a>.
               </p>
