@@ -1,6 +1,7 @@
 .Projectcard {
     width: 22.5%;
-    max-height: 15%;
+    max-height: inherit;
+    box-sizing: border-box;
 }
 
 @media all and (max-width: 800px) {

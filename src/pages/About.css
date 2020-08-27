@@ -114,7 +114,6 @@ strong {
 
 #Projects {
   width: 100%;
-  height: auto;
   background: #fefefe;
 }
 
@@ -126,11 +125,9 @@ strong {
 }
 
 #ProjectsCarousel {
-  padding-top: 3%;
+  margin-top: 3%;
   width: 100%;
-  /* display: inline-block; */
   position: relative;
-  /* margin: auto; */
   display: flex;
   flex-wrap: wrap;
   background: #fefefe;
@@ -143,7 +140,7 @@ strong {
   width: 100%;
   margin: auto;
   height: 50vh;
-  /* margin-top: 3%; */
+  margin-top: 3%;
   padding-top: 2%;
   padding-bottom: 5%;
 }
@@ -332,7 +329,7 @@ strong {
 @media all and (max-width: 800px) {
 
   #IntroSection {
-    padding-bottom: 10%;
+    padding-bottom: 33%;
     background: #fefefe;
   }
 
@@ -381,10 +378,12 @@ strong {
 
   #Projects {
     height: 100%;
+    width: 100%;
     color: #fefefe;
     background: #2f2f2f;
-    padding-bottom: 25%;
+    padding-bottom: 20%;
   }
+
   #ProjectsCarousel {
     padding-top: 3%;
     color: #fefefe;
