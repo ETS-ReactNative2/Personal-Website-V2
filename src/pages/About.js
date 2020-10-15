@@ -19,25 +19,25 @@ import confessions from '../graphics/confessions.jpeg'
 
 class About extends Component {
 
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = { tabIndex: 0 }
     this.changeTabIndex = this.changeTabIndex.bind(this)
   }
 
-  changeTabIndex (idx) {
+  changeTabIndex(idx) {
     this.setState({ tabIndex: idx })
     return true
   }
 
-  render () {
+  render() {
     return (
       <div className='Page'>
         <div id='IntroSection'>
           <div id='About'>
             <div id='text'>
               <h1>Arjun Bhalla</h1>
-              <p className='accentText'>Hello! I'm Arjun, a Cornell Computer Science graduate. I am currently interning part-time as a Software Engineer at a medical tech startup called <a href='https://www.enroute.digital' target='blank' className='inTextExternalLink'> enroute </a>, and am full-time attending Cornell Tech to pursue my Masters in Computer Science.
+              <p className='accentText'>Hello! I'm Arjun, a Cornell Computer Science graduate. I am currently attending Cornell Tech to pursue my Masters in Computer Science, after which I'll be starting at <a href="https://www.bloomberg.com/company/engineering/" className='inTextLink' target="blank">Bloomberg</a> full-time as a Software Engineer.
               <br /><br />
               My primary interests are in Machine Learning and Distributed Systems, and one of many problems that currently interest me is looking at how Cloud Architectures can be leveraged to provide efficient ML services for IoT devices. In the past, I've done some class and independent project work on NLP and Recommendation Systems, Game playing AI, and have done research with Professor Thorsten Joachims on Counterfactual Machine Learning.
               <br /> <br />
@@ -54,10 +54,10 @@ class About extends Component {
               <h2>Select Projects + Research</h2>
               <div id='ProjectsCarousel'>
                 {/* <AliceCarousel autoPlay autoPlayInterval='4000'> */}
-                  <Projectcard className='sliderimg' title='Fall Detector' date='Spring 2020' description='An IoT System for Automated Fall Detection in Smart Homes.' link='https://github.com/benjaminmposnick/Fall-Detector' />
-                  <Projectcard title='Simulated B-Tree DHT' date='Spring 2020' description='Built a simulated Distributed Hash Table with B-Tree structure (private repo).' link='https://github.com/ArjunBhalla98' />
-                  <Projectcard title="Neural Models Research" date="Spring 2019" description="A project investigating dropout for neural abstractive text summarisation." link="http://www.cs.cornell.edu/people/tj/publications/wang_etal_19a.pdf" />
-                  <Projectcard title="BLBF Regression Paper" date="Spring 2019" description="A paper on Regression models to model learning bias. Accepted to ICML 2019." link="http://www.cs.cornell.edu/people/tj/publications/wang_etal_19a.pdf" />
+                <Projectcard className='sliderimg' title='Fall Detector' date='Spring 2020' description='An IoT System for Automated Fall Detection in Smart Homes.' link='https://github.com/benjaminmposnick/Fall-Detector' />
+                <Projectcard title='Simulated B-Tree DHT' date='Spring 2020' description='Built a simulated Distributed Hash Table with B-Tree structure (private repo).' link='https://github.com/ArjunBhalla98' />
+                <Projectcard title="Neural Models Research" date="Spring 2019" description="A project investigating dropout for neural abstractive text summarisation." link="https://drive.google.com/file/d/16GgnTy0iZg04shfQrRr8TXG53GscReXr/view?usp=sharing" />
+                <Projectcard title="BLBF Regression Paper" date="Spring 2019" description="A paper on Regression models to model learning bias. Accepted to ICML 2019." link="http://www.cs.cornell.edu/people/tj/publications/wang_etal_19a.pdf" />
                 {/* </AliceCarousel> */}
               </div>
             </div>
@@ -93,16 +93,16 @@ class About extends Component {
                   <div id='wineCarousel'>
                     <button id='prevButton' className='sliderButton' onClick={() => this.Carousel.slidePrev()}>&#8249;</button>
                     <div id='carouselWrapper'>
-                    <AliceCarousel autoPlay autoPlayInterval='6000' dotsDisabled={true} buttonsDisabled={true} ref={(el) => { this.Carousel = el }}>
-                      <Winecard title='Donnhoff, Niederhauser Klamm Riesling Kabinett 2018' image={wineFour} region='Nahe, Germany' description='This is a brilliant Riesling from a pretty well known German producer in the Nahe. It was bright, delicious, acidic, and top of the line for me when it comes to dry German Riesling. Amazing value - I found a lot of dry German Rieslings (like Peter Jakob Kuhn) to be bone dry, almost aggressively so, but Donnhoff is perfectly balanced, and cheap(ish) too!' />
-                      
-                      <Winecard title='Chateau Leoville Barton 1997' image={wineOne} region='St. Julien, Bordeaux, France' description='I had the pleasure of trying both this and the 2014 during a tasting event at Cornell. This blew me away and struck me as a top 3 for the (12+ Chateaux) tasting. This may not be value in the traditional sense, as it is certainly outside my normal buying price range by quite a few standard deviations, but it is excellent and good value for money nonetheless and I thought I should include it.' />
+                      <AliceCarousel autoPlay autoPlayInterval='6000' dotsDisabled={true} buttonsDisabled={true} ref={(el) => { this.Carousel = el }}>
+                        <Winecard title='Donnhoff, Niederhauser Klamm Riesling Kabinett 2018' image={wineFour} region='Nahe, Germany' description='This is a brilliant Riesling from a pretty well known German producer in the Nahe. It was bright, delicious, acidic, and top of the line for me when it comes to dry German Riesling. Amazing value - I found a lot of dry German Rieslings (like Peter Jakob Kuhn) to be bone dry, almost aggressively so, but Donnhoff is perfectly balanced, and cheap(ish) too!' />
 
-                      <Winecard title='Monasterio De Las Vinas 2019' image={wineTwo} region='Carinena, Spain' description='Grenache dominated Tempranillo blend from a less known appellation in Northern Spain, just south of Rioja. A young, fun, interesting wine. I had this with grilled burgers and it went really well. I really liked that the tannin was not gripping, but more velvety.' />
+                        <Winecard title='Chateau Leoville Barton 1997' image={wineOne} region='St. Julien, Bordeaux, France' description='I had the pleasure of trying both this and the 2014 during a tasting event at Cornell. This blew me away and struck me as a top 3 for the (12+ Chateaux) tasting. This may not be value in the traditional sense, as it is certainly outside my normal buying price range by quite a few standard deviations, but it is excellent and good value for money nonetheless and I thought I should include it.' />
 
-                      <Winecard title='Dautel Spatburgunder 2017' image={wineThree} region='Wuttemberg, Germany' description='Incredibly balanced German Pinot Noir. Thoroughly enjoyed drinking this powerhouse, only wish I had paired it with something, despite it being fantastic on its own.' />
+                        <Winecard title='Monasterio De Las Vinas 2019' image={wineTwo} region='Carinena, Spain' description='Grenache dominated Tempranillo blend from a less known appellation in Northern Spain, just south of Rioja. A young, fun, interesting wine. I had this with grilled burgers and it went really well. I really liked that the tannin was not gripping, but more velvety.' />
 
-                    </AliceCarousel>
+                        <Winecard title='Dautel Spatburgunder 2017' image={wineThree} region='Wuttemberg, Germany' description='Incredibly balanced German Pinot Noir. Thoroughly enjoyed drinking this powerhouse, only wish I had paired it with something, despite it being fantastic on its own.' />
+
+                      </AliceCarousel>
                     </div>
                     <button id='nextButton' className='sliderButton' onClick={() => this.Carousel.slideNext()}>&#8250;</button>
                   </div>
@@ -117,15 +117,15 @@ class About extends Component {
 
                     {/* <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:2135h4s7ygirhuzfsmsz2ldfi&size=detail&theme=dark" width="300" height="56" scrolling="no" frameBorder="0" style={{ allowtransparency:true}}></iframe> */}
                   </div>
-              </div>
-            </TabPanel>
+                </div>
+              </TabPanel>
             </Tabs>
           </div>
         </div>
 
-      <div id='footer'>
-        <div id='mediaDiv'>
-          <ul id='media'>
+        <div id='footer'>
+          <div id='mediaDiv'>
+            <ul id='media'>
               <li><a href='https://drive.google.com/file/d/1nrCmALWZVaAwXNYli2l0QoMl4IjFAz6r/view?usp=sharing' target='blank'>Resumé</a></li>
               <li><a href='https://www.linkedin.com/in/ab-98' target='blank'>LinkedIn</a></li>
               <li><a href='https://www.github.com/ArjunBhalla98' target='blank'>GitHub</a></li>
