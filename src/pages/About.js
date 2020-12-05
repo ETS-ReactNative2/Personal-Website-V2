@@ -43,7 +43,6 @@ class About extends Component {
               <br /> <br />
               Please explore the rest of my website to learn about my projects and various interests! Outside of Computer Science, I have a wide array of interests, from golf to travelling and experiencing new cultures. I also really enjoy <a href='#interests' className='inTextLink' onClick={() => this.changeTabIndex(0)}>reading</a>, exploring <a href='#interests' className='inTextLink' onClick={() => this.changeTabIndex(1)}>wine and cooking</a>, listening to, and composing <a href='#interests' className='inTextLink' onClick={() => this.changeTabIndex(2)}>music</a>.
               </p>
-              <br />
             </div>
             <div id='photo'><img src={arjun} id='ProfilePic' />
             </div>
@@ -54,10 +53,10 @@ class About extends Component {
               <h2>Select Projects + Research</h2>
               <div id='ProjectsCarousel'>
                 {/* <AliceCarousel autoPlay autoPlayInterval='4000'> */}
-                <Projectcard className='sliderimg' title='Fall Detector' date='Spring 2020' description='An IoT System for Automated Fall Detection in Smart Homes.' link='https://github.com/benjaminmposnick/Fall-Detector' />
-                <Projectcard title='Simulated B-Tree DHT' date='Spring 2020' description='Built a simulated Distributed Hash Table with B-Tree structure (private repo).' link='https://github.com/ArjunBhalla98' />
-                <Projectcard title="Neural Models Research" date="Spring 2019" description="A project investigating dropout for neural abstractive text summarisation." link="https://drive.google.com/file/d/16GgnTy0iZg04shfQrRr8TXG53GscReXr/view?usp=sharing" />
-                <Projectcard title="BLBF Regression Paper" date="Spring 2019" description="A paper on Regression models to model learning bias. Accepted to ICML 2019." link="http://www.cs.cornell.edu/people/tj/publications/wang_etal_19a.pdf" />
+                <Projectcard className='sliderimg' title='Memory Efficient Prims Algorithm' keywords='Independent Research, Algorithms' description='Developed a new Approximation based approach for MST Problems using Bloom Filters. Reduced Memory usage by 93% from Prims Optimal Implementation, with < 0.2% error rate.' link='https://github.com/ArjunBhalla98/bloom-filter-prims' />
+                <Projectcard title='Distributed Thermal Fall Detector' keywords='ML, Distributed Systems, Cloud Computing' description='Built a fully functional fall detection tool for use in elderly care leveraging the Azure Cloud. Achieved ~90% validation accuracy in specific cases and 95th percentile end-to-end times of 0.06s.' link='https://github.com/benjaminmposnick/Fall-Detector' />
+                <Projectcard title="Neural Abstractive Text Summarisation" keywords="NLP, RNN, Independent Research" description="A project investigating the effect of dropout for neural abstractive text summarisation tasks on baseline network architectures." link="https://drive.google.com/file/d/16GgnTy0iZg04shfQrRr8TXG53GscReXr/view?usp=sharing" />
+                <Projectcard title="Batch Learning From Bandit Feedback" keywords="Counterfactual ML, Academic research" description="A paper on Regression models to model learning bias using bias corrected reward imputation when learning from logged bandit feedback. Accepted to ICML 2019, RWSDM Workshop." link="http://www.cs.cornell.edu/people/tj/publications/wang_etal_19a.pdf" />
                 {/* </AliceCarousel> */}
               </div>
             </div>

@@ -19,7 +19,7 @@
 #IntroSection {
   background: #fefefe;
   /* color:black; */
-  height: 100vh;
+  height: 92vh;
 }
 
 strong {
@@ -125,7 +125,7 @@ strong {
 }
 
 #ProjectsCarousel {
-  margin-top: 3%;
+  margin-top: 2%;
   width: 100%;
   position: relative;
   display: flex;
@@ -140,8 +140,7 @@ strong {
   width: 100%;
   margin: auto;
   height: 50vh;
-  margin-top: 3%;
-  padding-top: 2%;
+  padding-top: 1%;
   padding-bottom: 5%;
 }
 
@@ -367,8 +366,8 @@ strong {
 
   #ProjectsContainer {
     background: #2f2f2f;
-    padding-top: 2%;
-    padding-bottom: 25%;
+    /* padding-top: 2%; */
+    /* padding-bottom: 25%; */
   }
 
   #ProjectsContainer h2 {
@@ -380,11 +379,11 @@ strong {
     width: 100%;
     color: #fefefe;
     background: #2f2f2f;
-    padding-bottom: 10%;
+    /* padding-bottom: 10%; */
   }
 
   #ProjectsCarousel {
-    padding-top: 3%;
+    /* padding-top: 3%; */
     color: #fefefe;
     background: #2f2f2f;
     width: 100%;

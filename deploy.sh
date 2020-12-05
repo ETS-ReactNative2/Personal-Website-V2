@@ -1,3 +1,4 @@
+rm -rf ./build/public
 npm run build
 mkdir ./build/public
 mv ./build/asset-manifest.json ./build/public
