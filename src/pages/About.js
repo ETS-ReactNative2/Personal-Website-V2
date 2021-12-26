@@ -36,24 +36,25 @@ class About extends Component {
         <div id='IntroSection'>
           <div id='About'>
             <div id='LeftInternal'>
-              <div id='photo'><img src={arjun} id='ProfilePic' />
-                <h1>Arjun Bhalla</h1>
-                <div id='mediaDiv'>
-                  <ul id='media'>
-                    <li><a href='https://drive.google.com/file/d/1TeD5VVDtm_C6t7Kbi0pxEX6TaSg-5Eot/view?usp=sharing' target='blank'>Resumé</a></li>
-                    <li><a href='https://www.linkedin.com/in/ab-98' target='blank'>LinkedIn</a></li>
-                    <li><a href='https://www.github.com/ArjunBhalla98' target='blank'>GitHub</a></li>
-                    <li><a href='mailto:ab2383@cornell.edu'>Email</a></li>
-                  </ul>
-                </div>
+              <div id='photo'>
+                <img src={arjun} id='ProfilePic' />
+              </div>
+              <h1>Arjun Bhalla</h1>
+              <div id='mediaDiv'>
+                <ul id='media'>
+                  <li><a href='https://drive.google.com/file/d/1TeD5VVDtm_C6t7Kbi0pxEX6TaSg-5Eot/view?usp=sharing' target='blank'>Resumé</a></li>
+                  <li><a href='https://www.linkedin.com/in/ab-98' target='blank'>LinkedIn</a></li>
+                  <li><a href='https://www.github.com/ArjunBhalla98' target='blank'>GitHub</a></li>
+                  <li><a href='mailto:ab2383@cornell.edu'>Email</a></li>
+                </ul>
               </div>
             </div>
           </div>
           <div id='Projects'>
             <div id='text'>
               <h2>About Me</h2>
-              <p className='accentText'>Hello! I'm Arjun, and I'm a Machine Learning Engineer working at <a href="https://www.bloomberg.com/company/engineering/" className='inTextLink' target="blank">Bloomberg's</a>  AI group, as part of the Search Team.
-                I got my Masters in Computer Science from Cornell Tech in 2021, and my Bachelor's in Computer Science with an external specialisation in Mathematics from Cornell right before that.                 <br /><br />
+              <p className='accentText'>Hello! I'm Arjun, and I'm a Machine Learning Engineer working on the Search team within <a href="https://www.bloomberg.com/company/engineering/" className='inTextLink' target="blank">Bloomberg's</a>  AI group.
+                I recieved my Masters in Computer Science from Cornell Tech in 2021, and my Bachelor's in Computer Science with an external specialisation in Mathematics from Cornell right before that.                 <br /><br />
                 Please explore the rest of my website to learn about my projects and other work! Outside of Computer Science, I have a wide array of interests, from basketball to learning languages and experiencing new cultures. I also really enjoy reading, exploring wine and cooking, and all things music.
               </p>
             </div>

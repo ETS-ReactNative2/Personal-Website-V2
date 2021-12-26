@@ -76,7 +76,7 @@ html {
   scroll-behavior: smooth;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 950px) {
   body {
     background: #2f2f2f;
   }

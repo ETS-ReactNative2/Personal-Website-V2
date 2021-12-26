@@ -1,19 +1,12 @@
 .Projectcard {
     width: 100%;
     max-height: inherit;
-    line-height: 30%;
+    line-height: 100%;
     margin-bottom:3%;
     /* box-sizing: border-box; */
 }
 
-@media all and (max-width: 800px) {
-    .Projectcard {
-        width: 100%;
-        padding: 3%;
-    }
-    .projectContainer .description, .authors, .projectContainer h3 {
-        color: #fefefe;
-    }
+@media all and (max-width: 950px) {
 }
 
 .projectContainer {
