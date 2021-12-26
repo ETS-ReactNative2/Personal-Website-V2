@@ -6,17 +6,12 @@ class Projectcard extends Component {
         super(props);
     }
 
-    goToLink(link) {
-        window.open(link, "_blank");
-    }
-
     render() {
         return (
-            <div className="Projectcard" onClick={() => this.goToLink(this.props.link)}>
+            <div className="Projectcard">
+                <h3>{this.props.title}</h3>
                 <div className="projectContainer">
-                    <h3>{this.props.title}</h3>
-                    <p className="keywords">{this.props.keywords}</p>
-                    <p className='description'>{this.props.description}</p>
+                    <div className="projectDescription"><i>{this.props.authors}</i>, {this.props.conference}, <b> {this.props.year}</b>. [<a href={this.props.link} target="blank">Link</a>]</div>
                 </div>
             </div>
         );

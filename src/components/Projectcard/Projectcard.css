@@ -1,7 +1,9 @@
 .Projectcard {
-    width: 23%;
+    width: 100%;
     max-height: inherit;
-    box-sizing: border-box;
+    line-height: 30%;
+    margin-bottom:3%;
+    /* box-sizing: border-box; */
 }
 
 @media all and (max-width: 800px) {
@@ -9,39 +11,25 @@
         width: 100%;
         padding: 3%;
     }
-    .projectContainer .description, .keywords, .projectContainer h3 {
+    .projectContainer .description, .authors, .projectContainer h3 {
         color: #fefefe;
     }
 }
 
 .projectContainer {
-    /* border: 1px solid #DDD; */
-    /* box-shadow: 1px 1px 1px 1px #DDD; */
+    /* border: 1px solid #CCC; */
+    /* box-shadow: 1px 1px 1px 1px #CCC; */
     /* background: #fafafa; */
-    box-shadow: 1px 1px 2px 2px #DDD;
-    border-radius: 10px;
-    height: 100%;
-    width: auto;
-    padding: 2% 5% 2% 5%;
+    /* box-shadow: 1px 1px 2px 2px #CCC; */
+    /* border-radius: 10px; */
+    display:inline-block;
+    /* height: auto; */
+    width: 100%;
+    vertical-align: top;
+    /* padding: 2% 5% 2% 5%; */
     text-decoration: none;
-    transition: 0.1s ease-out;
+    font-size: 0.9em;
+    /* transition: 0.1s ease-out; */
     /* margin: 0% 7% 7% 0%; */
 }
 
-.projectContainer:hover {
-    /* border: 1px solid #FF5722; */
-    box-shadow: 1px 1px 2px 2px #FF5722;
-    transition: 0.1s ease-in;
-    cursor: pointer;
-}
-
-.keywords {
-    font-style: italic;
-    opacity: 0.8;
-    font-size: 0.9em;
-}
-
-.projectContainer .description {
-    text-align: left; 
-    font-size: 0.9em;
-}

@@ -5,39 +5,47 @@
   Surface: #FFF (Needs to be lighter than background?
   "dark text": #424242
   "black": #2f2f2f
-  text: #DDD, #fefefe
+  text: #CCC, #fefefe
 */
 body {
   margin: 0;
   padding: 0;
-  background: #fefefe;
+  height: 100%;
+  /* background: #fefefe; */
+  background: #efefef;
   text-align:left;
   color: #2f2f2f;
   font-family: 'Roboto', sans-serif;
 }
 
 .Page {
+  margin: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   right: 0;
   top: 0;
-  background: #424242;
-  float:right; 
+  padding-bottom: 15%;
+  /* margin-bottom: 10%; */
+  /* background: #fefefe; */
+  background: #efefef;
+  /* float:right;  */
   animation: 1.5s fadeIn;
 }
 
 h1 {
   font-family: 'Roboto', serif;
   font-weight: 800;
-  font-size: 3em;
+  font-size: 2em;
   color: #2f2f2f;
+  /* color: rgb(104, 103, 103); */
 }
 
 h2 {
   font-family: 'Roboto', serif;
   font-size: 1.5em;
   font-weight: 900;
-  color: #2f2f2f;
+  /* color: #2f2f2f; */
+  color: rgb(104, 103, 103);
 }
 
 h3 {
@@ -49,13 +57,13 @@ h3 {
 
 a {
   font-family: 'Roboto', serif;
-  font-size: 14pt;
+  font-size: 0.9em;
   font-weight: 700;
 }
 
 p {
   font-family: 'Roboto', sans-serif;
-  font-size: 12pt;
+  font-size: 0.9em;
   font-weight: 300;
   /* text-align: justify; */
   color: #2f2f2f;
