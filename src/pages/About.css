@@ -190,6 +190,7 @@ strong {
 
   #IntroSection {
     flex-direction: column;
+    padding: 3%;
     height: auto;
   }
 
@@ -199,14 +200,14 @@ strong {
     position: relative;
   }
 
-  #photo {
-    display: none;
-  }
-
   #Projects {
     width: 100%;
   }
 
+  #text {
+    padding: 5%;
+    margin-bottom: 5%;
+  }
   #LeftInternal h1 {
     font-size: 1.5em;
   }
@@ -215,7 +216,7 @@ strong {
   #media {
     font-size: 1em;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 2vw;
+    gap: 5vw;
     /* grid-template-rows: 1fr 1fr; */
   }
 
@@ -233,6 +234,8 @@ strong {
   }
 
   .ProjectsCarousel {
-    padding-bottom: 5%;
+    padding: 5%;
+    margin-bottom: 5%;
+    /* padding-bottom: 5%; */
   }
 }
