@@ -2,7 +2,7 @@ import React, { Component, setState } from 'react';
 import './About.css'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 // import 'react-tabs/style/react-tabs.css'
-import arjun from '../graphics/arjun_grad.jpg'
+import arjun from '../graphics/arjun_norway.jpeg'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
 import Projectcard from '../components/Projectcard/Projectcard'
